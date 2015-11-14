@@ -1,5 +1,5 @@
 function handleAR(roomId) {
-    var comm = new Icecomm('oJd1WuKvDgqew1wLNru5qA2yqt4QZg5uH3b1RujPtwvR8yji2');
+    var comm = new Icecomm('3kB4PpZaNNFN4r3xhmOVgcPn2D8rzcOTtQFh4gRwmAsaGTPwlm');
     comm.connect(roomId, {audio: false});
 
     comm.on('connected', function(peer) {

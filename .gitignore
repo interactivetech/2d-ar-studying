@@ -3,3 +3,7 @@
 .idea/*
 
 .meteor/local
+
+.demeteorized/
+
+.demeteorized/*
