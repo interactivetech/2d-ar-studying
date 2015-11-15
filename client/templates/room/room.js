@@ -23,9 +23,9 @@ function handleAR(roomId) {
     }, false);
     v2.addEventListener("loadeddata", function() {
         i2 = window.setInterval(function() {
-            ctx.drawImage(v,5,5,500,500);
+            ctx.drawImage(v,0,0,640,480);
             ctx.globalAlpha = 0.5;
-            ctx.drawImage(v2,5,5,500,500);
+            ctx.drawImage(v2,0,0,640,480);
         }, 20);
     }, false);
 };
