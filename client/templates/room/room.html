@@ -1,0 +1,124 @@
+<template name="room">
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="favicon.ico">
+
+    <title>Cover Template for Bootstrap</title>
+
+    <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
+
+    <!-- Custom styles for this template -->
+    <link href="cover.css" rel="stylesheet">
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="viewport-bug-workaround.js"></script>
+  </head>
+
+  <body>
+
+    <div class="site-wrapper">
+
+      <div class="site-wrapper-inner">
+
+        <div class="cover-container">
+
+          <div class="masthead clearfix">
+            <div class="inner">
+              <h3 class="masthead-brand">2D AR Studying</h3>
+              <nav class="nav nav-masthead">
+               <!--  <a class="nav-link active" href="#">Home</a>
+                <a class="nav-link" href="#">Features</a>
+                <a class="nav-link" href="#">Contact</a> -->
+              </nav>
+            </div>
+          </div>
+
+          <div class="inner cover">
+
+            <div class="row">
+          <!-- Where video feed will go -->
+
+                <div class="col-sm-9">
+                  <!-- <p class="lead">One</p> -->
+                  
+                  <video id="video" width="170" height="85" type='video/mp4' autoplay></video>    
+                  <video id="video2" width="170" height="85"  type='video/mp4' autoplay></video>
+                  <canvas id="myCanvas" width="640" height="480" style="border:1px solid #d3d3d3;"></canvas>
+
+                </div>
+
+                <!-- Where shared worksoace will go -->
+               <!--   <div class="col-sm-6">
+                  <p class="lead">Two</p>
+                </div>
+ -->
+
+                <!-- Where buttons will go  -->
+               <div class="col-sm-3">
+               
+                <div  id= "chatRoomName" class="form-group">
+                <label for="usr"></label>
+                  <input type="text" class="form-control" id="usr" value="x23fs" readonly>
+                </div>
+                  
+                <button type="button" class="btn btn-primary btn-md btn-block">Upload File</button>
+                <button type="button" class="btn btn-success btn-md btn-block">Save Annotation</button>
+
+                <!-- Display username -->
+                <p class="lead">Usernames: anmendez, lglui</p>
+
+                <div class="form-group">
+                  <label for="comment">Chat Room:</label>
+                  <textarea class="form-control" rows="5" id="comment"></textarea>
+                </div>
+               
+
+              </div>
+            </div>
+
+            <!-- <h1 class="cover-heading">Cover your page.</h1>
+            <p class="lead">Cover is a one-page template for building simple and beautiful home pages. Download, edit the text, and add your own fullscreen background photo to make it your own.</p>
+            <p class="lead"> -->
+              
+<!--             </p>
+ -->          
+</div>
+
+          <div class="mastfoot">
+            <div class="inner">
+              <p>Cover template for <a href="http://getbootstrap.com">HackHavard </a>, by <a href="https://github.com/interactivetech/2d-ar-studying">@team</a>.</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+   <!-- <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>-->
+    <!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="viewport-bug-workaround.js"></script>
+  </body>
+
+
+
+    <!-- <video id="video" controls width="270" autoplay></video>
+    <video id="video2" controls width="270" autoplay></video>
+
+    <p>Canvas (the code draws the current frame of the video every 20 millisecond):</p>
+    <canvas id="myCanvas" width="500" height="500" style="border:1px solid #d3d3d3;"></canvas> -->
+</template>
